@@ -1,0 +1,5 @@
+brightest_path_lib
+magicgui
+napari
+numpy
+tifffile
