@@ -3,7 +3,7 @@ Simple tool to annotator skeleton of 3D curvilinear structure
 
 
 ## Dependencies
-latest version of:
+latest version of: \
 brightest_path_lib \
 magicgui \
 napari \
