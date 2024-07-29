@@ -193,7 +193,7 @@ class AnnotatorWidget(widgets.Container):
     def save_mask(self,viewer):
         image_path = self.image_path.value
         directory, image_name = os.path.split(image_path)
-        mask_name = image_name.replace('img_','mask_')
+        mask_name = 'mask_' + image_name
 
         image = self.image_layer.data
         path = sum(self.labeled_path,[])
