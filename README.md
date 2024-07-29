@@ -23,9 +23,6 @@ Use left and right double click to add start point and goal point. Then push f k
 
 <img src="assets/demo.gif" width="480">
 
-## Future plan
-
-This will be packaged as a napari plugin later.
 
 ## License
 
