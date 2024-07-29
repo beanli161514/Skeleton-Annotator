@@ -6,45 +6,9 @@ visibility: public
 categories: ["Annotation", "Segmentation", "Acquisition"]
 contributions:
   commands:
-    - id: Skeleton-Annotator.get_reader
-      python_name: skeleton_annotator._reader:napari_get_reader
-      title: Open data with Skeleton Annotator
-    - id: Skeleton-Annotator.write_multiple
-      python_name: skeleton_annotator._writer:write_multiple
-      title: Save multi-layer data with Skeleton Annotator
-    - id: Skeleton-Annotator.write_single_image
-      python_name: skeleton_annotator._writer:write_single_image
-      title: Save image data with Skeleton Annotator
-    - id: Skeleton-Annotator.make_container_widget
-      python_name: skeleton_annotator:ImageThreshold
-      title: Make threshold Container widget
-    - id: Skeleton-Annotator.make_magic_widget
-      python_name: skeleton_annotator:threshold_magic_widget
-      title: Make threshold magic widget
-    - id: Skeleton-Annotator.make_function_widget
-      python_name: skeleton_annotator:threshold_autogenerate_widget
-      title: Make threshold function widget
-    - id: Skeleton-Annotator.make_qwidget
-      python_name: skeleton_annotator:ExampleQWidget
-      title: Make example QWidget
-  readers:
-    - command: Skeleton-Annotator.get_reader
-      accepts_directories: false
-      filename_patterns: ['*.npy']
-  writers:
-    - command: Skeleton-Annotator.write_multiple
-      layer_types: ['image*','labels*']
-      filename_extensions: []
-    - command: Skeleton-Annotator.write_single_image
-      layer_types: ['image']
-      filename_extensions: ['.npy']
+    - id: Skeleton-Annotator.AnnotatorWidget
+      python_name: skeleton_annotator:AnnotatorWidget
+      title: Skeleton Annotator
   widgets:
-    - command: Skeleton-Annotator.make_container_widget
-      display_name: Container Threshold
-    - command: Skeleton-Annotator.make_magic_widget
-      display_name: Magic Threshold
-    - command: Skeleton-Annotator.make_function_widget
-      autogenerate: true
-      display_name: Autogenerate Threshold
-    - command: Skeleton-Annotator.make_qwidget
-      display_name: Example QWidget
+    - command: Skeleton-Annotator.AnnotatorWidget
+      display_name: Skeleton Annotator
