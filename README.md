@@ -2,6 +2,11 @@
 
 Simple tool to annotator skeleton of 3D curvilinear structure
 
+
+!!! Moved to [neurofly](https://github.com/beanli161514/neurofly) as a napari plugin
+
+
+
 ## Dependencies
 
 latest version of: 
